@@ -38,7 +38,52 @@ body{
     grid-column: 2/3;
     grid-row:1/2;
     background-color: yellow;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns:60% 40%
 }
+/* user */
+.topleft{
+    background-color: aqua;
+    grid-row: 1/2;
+}
+.topright{
+    background-color: magenta;
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    padding-right: 20px;
+    align-items: center;
+}
+.bottomleft{
+    background-color: salmon;
+    grid-row:2/3;
+    border: 3px solid red;
+}
+.bottomright{
+    display: flex;
+    background-color: chartreuse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button{
+    border-radius: 25px;
+    width: 100px;
+    height:50px;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+
+input{
+    border-radius: 10px;
+    width:clamp(200px, 50%, 600px);
+}
+
+
 
 .content{
     background: linear-gradient(orange, magenta);
